@@ -1,6 +1,6 @@
 ---
-title: 'Contact | Code Stitch Web Designs'
-description: 'Meta description for the page'
+title: 'Contact | Trevor Dove'
+description: 'Fee'
 preloadImg: '/assets/images/cabinets2.jpg'
 permalink: 'contact/'
 eleventyNavigation:
@@ -18,17 +18,29 @@ eleventyNavigation:
 {% block body %}
 
     <!-- ============================================ -->
-    <!--                    LANDING                   -->
+    <!--                   Banner                     -->
     <!-- ============================================ -->
 
-    <section id="int-hero">
-        <h1 id="home-h">Contact Us</h1>
-        <picture>
-            <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-            <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
+    <div id="banner-2285">
+        <div class="cs-container">
+            <span class="cs-int-title">Get in Touch</span>
+            <p class="cs-text">
+                Hope you like my blog! If you're a recruiter / employer / reader looking to get in touch, feel free to shoot me a text or email! Or, if you'd prefer, you can submit a form below. Unless I get hit by a meteor, I should get back to you in under 24 hours :)
+            </p>
+            <div class="cs-breadcrumbs">
+                <a href="/" class="cs-link">Home</a>
+                <a href="/contact" class="cs-link cs-active">Contact</a>
+            </div>
+        </div>
+        <!--Background Image-->
+        <picture class="cs-background">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="/assets/images/blog/blog1.jpg">
+            <!--Tablet and above Image-->
+            <source media="(min-width: 601px)" srcset="/assets/images/blog/blog1.jpg">
+            <img decoding="async" src="/assets/images/blog/blog1.jpg" alt="construction" width="1280" height="568" aria-hidden="true">
         </picture>
-    </section>
+    </div>
 
     <!-- ============================================ -->
     <!--                Contact Form                  -->
@@ -36,12 +48,12 @@ eleventyNavigation:
 
     <section id="cs-contact">
         <div class="cs-container">
-            <form id="cs-form" name="Contact Form" method="post">
+            <form id="cs-form" name="Contact Form" method="post" data-netlify="True">
                 <div class="cs-content">
                     <span class="cs-topper">Contact</span>
                     <h2 class="cs-title">Get in Touch</h2>
                     <p class="cs-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ridiculus elementum ullamcorper ipsum porttitor aliquam. Id magna urna ultrices odio pulvinar. Sed ut.
+                        No matter if you're reaching out about my blog or potential employment opportunities, feel free to drop a line. I'm up for a discussion on most topics.
                     </p>
                 </div>
                 <label>
@@ -57,7 +69,7 @@ eleventyNavigation:
                     <input required type="text" id="phone" name="phone" placeholder="Phone">
                 </label>
                 <label>
-                    How Did You Find Us
+                    Reason For Reaching Out
                     <input type="text" id="find" name="find-us" placeholder="How did you find us?">
                 </label>
                 <label class="cs-label-message">
@@ -74,14 +86,14 @@ eleventyNavigation:
                 <span class="cs-header">Phone</span>
                 <a class="cs-link" href="tel:{{client.phoneForTel}}">{{client.phoneFormatted}}</a>
                 <!--Address-->
-                <span class="cs-header">Address</span>
+                <span class="cs-header">Working Out of</span>
                 <a class="cs-link" href="{{client.address.mapLink}}">
-                    {{client.address.lineOne}},
-                    <br/>
-                    {{client.address.lineTwo}},
-                    <br/>
+<!--                    {{client.address.lineOne}},-->
+<!--                    <br/>-->
+<!--                    {{client.address.lineTwo}},-->
+<!--                    <br/>-->
                     <span class="cs-block">
-                        {{client.address.city}}
+                        {{client.address.city}},
                         {{client.address.state}}
                         {{client.address.zip}}
                     </span>
@@ -89,8 +101,8 @@ eleventyNavigation:
 
                 <!-- Background Image-->
                 <picture class="cs-bg-picture">
-                    <source media="(min-width: 601px)" srcset="/assets/images/skyscraper.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/skyscraper.jpg" alt="building" loading="lazy" width="2500" height="1667">
+                    <source media="(min-width: 601px)" srcset="/assets/images/blog/blog1.jpg">
+                    <img aria-hidden="true" decoding="async" src="/assets/images/blog/blog1.jpg" alt="building" loading="lazy" width="2500" height="1667">
                 </picture>
 
             </div>
