@@ -349,48 +349,46 @@
             width: 100%;
         }
 
-        .cs-button-6 {
-            display: none;
 
-            .cs-wrapper {
-                width: (44/16rem);
-                height: auto;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                z-index: 1;
-                position: relative;
 
-                &:before {
-                    content: "";
-                    width: 100%;
-                    height: 100%;
-                    background: #f15a24;
-                    opacity: 1;
-                    position: absolute;
-                    display: block;
-                    bottom: 0;
-                    right: 0;
-                    transition: width 0.3s;
-                    z-index: -1;
-                }
-            }
 
-            .cs-icon {
-                width: (24/16rem);
-                height: auto;
-            }
+        .cs-wrapper {
+            width: (44/16rem);
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1;
+            position: relative;
 
-            &:hover {
-                color: #fff;
-                .cs-wrapper {
-                    &:before {
-                        width: 0%;
-                    }
-                }
+            &:before {
+                content: "";
+                width: 100%;
+                height: 100%;
+                background: #f15a24;
+                opacity: 1;
+                position: absolute;
+                display: block;
+                bottom: 0;
+                right: 0;
+                transition: width 0.3s;
+                z-index: -1;
             }
         }
 
+        .cs-icon {
+            width: (24/16rem);
+            height: auto;
+        }
+
+        &:hover {
+            color: #fff;
+            .cs-wrapper {
+                &:before {
+                    width: 0%;
+                }
+            }
+        }
 
         .cs-logo {
             z-index: 10;
@@ -735,6 +733,7 @@
                 color: #fff;
             }
         }
+
         .cs-button-6 {
             text-align: center;
             font-size: (16/16rem);
@@ -749,7 +748,7 @@
             /* prevents padding and border from affecting height and width */
             box-sizing: border-box;
             background-color: #1a1a1a;
-            display: inline-flex;
+            display: none;
             align-items: stretch;
             justify-content: space-between;
             gap: (24/16rem);
@@ -820,6 +819,10 @@
                     transform: translateY(0);
                 }
             }
+        }
+
+        .cs-button-6 {
+            display: inline-flex;
         }
 
         .cs-dropdown-button {
